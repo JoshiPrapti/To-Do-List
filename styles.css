@@ -1,0 +1,110 @@
+/* Style for the body element */
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the entire page */
+    background-color: #f4f4f9; /* Light background color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the container div */
+.container {
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the container */
+    width: 400px; /* Fixed width */
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    text-align: center; /* Centered text alignment */
+}
+
+/* Style for the h1 element */
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark text color */
+}
+
+/* Style for the input container div */
+.input-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the input and button */
+}
+
+/* Style for the input element */
+#todoInput {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space to the right of the input */
+    font-size: 16px; /* Font size */
+}
+
+/* Style for buttons */
+button {
+    background-color: #007bff; /* Blue background color */
+    border: none; /* Remove default border */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Style for button hover state */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the unordered list */
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin-top: 20px; /* Space above the list */
+}
+
+/* Style for list items */
+li {
+    background: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the list item */
+    margin-bottom: 10px; /* Space below each list item */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the content */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style for completed list items */
+li.completed {
+    text-decoration: line-through; /* Strike-through text */
+    color: #28a745; /* Green text color */
+}
+
+/* Style for the text of completed items */
+li.completed .todo-text {
+    color: #28a745; /* Green text color */
+}
+
+/* Style for the text span inside list items */
+.todo-text {
+    flex: 1; /* Take up remaining space */
+    margin-left: 10px; /* Space to the left of the text */
+}
+
+/* Style for delete buttons inside list items */
+li button {
+    background-color: #dc3545; /* Red background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Style for delete button hover state */
+li button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
